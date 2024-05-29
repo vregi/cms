@@ -1,0 +1,20 @@
+﻿.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.container-dashboard {
+    margin: 10px 10px 10px 10px;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #202020;
+}
+

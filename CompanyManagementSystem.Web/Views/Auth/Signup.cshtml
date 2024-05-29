@@ -1,0 +1,51 @@
+﻿@{
+    Layout = null;
+    @model SignupViewModel;
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="@Url.Content("~/css/signup.css")">
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <title>Signup</title>
+</head>
+<body>
+<div class="container">
+    <div class="left-panel">
+        @* <h1 class="promo">Offense is the best defense for your brands</h1> *@
+        <img src="@Url.Content("~/assets/demo-modal-bg.png")" class="left-img" alt="">
+    </div>
+    <div class="right-panel">
+        <form method="post" action="@Url.Action("PostData", "Auth")" class="login-form">
+            <label class="welcome">Welcome!</label>
+            
+            <label for="username" class="username_label">Username</label>
+            <input type="text" id="username" name="username" class="username">
+
+            <label for="password" class="password_label">Password</label>
+            <input type="password" id="password" name="password" class="password">
+
+            <button type="submit" class="login-button">
+                <span>Continue</span>
+            </button>
+
+            @* Display validation summary *@
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @* Display specific error message *@
+            @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+            {
+            <div class="text-danger">@Model.ErrorMessage</div>
+            }
+        </form>
+    </div>
+</div>
+</body>
+</html>

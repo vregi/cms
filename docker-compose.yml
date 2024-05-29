@@ -1,0 +1,12 @@
+﻿services:
+  companymanagementsystem.api:
+    image: companymanagementsystem.api
+    build:
+      context: .
+      dockerfile: CompanyManagementSystem.API/Dockerfile
+
+  companymanagementsystem.web:
+    image: companymanagementsystem.web
+    build:
+      context: .
+      dockerfile: CompanyManagementSystem.Web/Dockerfile

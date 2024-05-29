@@ -1,0 +1,196 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background: #04050A;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.nav {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none !important;
+    margin-bottom: 30px;
+    font-family: Involve, sans-serif;
+    font-weight: bold;
+
+}
+
+.nav-item a{
+    margin-left: 10px;
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.nav-item:hover {
+    color: #ccc;
+}
+
+.footer-link{
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+    margin-bottom: 20px;
+    height: 250px;
+    border-radius: 13px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Involve, sans-serif;
+
+}
+
+.app-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    text-align: left;
+    color: #04050A;
+    font-weight: bold;
+    width: 150px;
+}
+
+.by {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: normal;
+    color: #04050A;
+    font-weight: normal;
+    text-align: left;
+    width: 100px;
+    margin-left: -25px;
+}
+
+.footer svg{
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.github img {
+    width: 24px;
+    height: 24px;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background: #04050A;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    font-family: Involve, sans-serif;
+}
+
+.user-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.user-name {
+    font-size: 18px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.user-role {
+    font-size: 14px;
+    margin-right: 10px;
+    color: #888;
+}
+
+.user-avatar {
+    width: 45px;
+    height: 45px;
+    background-color: #202020;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-avatar svg {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.content {
+    flex-grow: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 85%;
+    overflow: hidden;
+}
+
+.version {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 75px;
+    bottom: 20px;
+    font-family: Involve, sans-serif;
+}
