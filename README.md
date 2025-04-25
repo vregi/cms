@@ -1,4 +1,4 @@
-Simple company management system written for a second year coursework.
+Simple CRUD company management system application written for a second year coursework.
 
 This project was built using ASP.NET framework, specifically with Web API and MVC, which also was the main learning goals.
 Additionally i learnt and used technologies as:
