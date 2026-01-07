@@ -1,10 +1,17 @@
-Simple CRUD company management system application written for a second year coursework.
+## Company Management System
 
-This project was built using ASP.NET framework, specifically with Web API and MVC, which also was the main learning goals.
-Additionally i learnt and used technologies as:
-1. JWT-based authentication which was written on top of ASP.NET Core Identity
-2. SHA2 and BCrypt
-3. Entity Framework
-4. PostgreSQL
+The application was built using the ASP.NET framework, with an emphasis on Web API and MVC architecture, which were the main learning objectives of the project
 
-CMS using Spring Boot -> https://github.com/vregi/cms-java
+## Technologies & Concepts
+
+- ASP.NET Core (Web API & MVC)
+- ASP.NET Core Identity for JWT
+- BCrypt
+- Entity Framework
+- PostgreSQL
+
+## Purpose
+
+This project was done as a part of my coursework at university
+
+> Similar project, but using Java and Spring Boot -> [CMS](https://github.com/vregi/cms-java)
